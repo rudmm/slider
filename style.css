@@ -52,12 +52,12 @@ body{
 	transition: all 2s;
 }
 .slider  .slide2{
-	left: calc(100%/3);
+	left: 210px;
 	opacity: 1;
 	transition: all 2s;
 }
 .slider  .slide3{
-	left: calc((100%/3)*2);
+	left: 420px;
 	opacity: 1;
 	transition: all 2s;
 }

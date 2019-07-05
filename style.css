@@ -1,0 +1,91 @@
+img{
+	position: absolute;
+	top: 0;
+	left: 100%;
+	max-width: 200px;
+	float: left;
+	padding: 5px;
+	height: auto;
+	opacity: 0;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	margin-top: 5px;
+	height: 123px;
+
+}
+.slider{
+	position: relative;
+	border: 2px solid black; 
+	overflow: hidden;
+	width: 630px;
+	height: 100%;
+}
+.btnLf, .btnRt{
+	width: 40px;
+	height: 100%;
+	border: none;
+	color: #ff9500;
+	font-size: 25px;
+	background: none;
+	opacity: .7;
+	margin: 5px;
+}
+.btnLf:focus, .btnRt:focus{
+	outline: none;
+}
+.btnLf:hover, .btnRt:hover{
+	background: rgba(12, 24, 26, 0.2);
+}
+
+.slider .slideLeft{
+	left: -200px;
+	opacity: 0;
+	transition: all 2s;
+}
+.slider .slide1{
+	left: 0;
+	opacity: 1;
+	transition: all 2s;
+}
+.slider  .slide2{
+	left: calc(100%/3);
+	opacity: 1;
+	transition: all 2s;
+}
+.slider  .slide3{
+	left: calc((100%/3)*2);
+	opacity: 1;
+	transition: all 2s;
+}
+.slider  .slideRigth{
+	left: 100%;
+	opacity: 0;
+	transition: all 2s;
+}
+@media (max-width: 1024px){
+	.slider{
+		width: 420px;
+	}
+	.slide2{
+		left: 50%;
+	}
+	.slide3{
+		left: 100%;
+	}
+	.btnLf, .btnRt{
+		width: 20px;
+	}
+}
+@media (max-width: 480px){
+	.slide2{
+		left: 100%;
+	}
+	.slider{
+		max-width: 210px;
+	}
+}
+

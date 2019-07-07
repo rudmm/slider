@@ -7,6 +7,7 @@ img{
 	padding: 5px;
 	height: auto;
 	opacity: 0;
+	transition: all .7s
 }
 body{
 	display: flex;
@@ -33,6 +34,7 @@ body{
 	background: none;
 	opacity: .7;
 	margin: 5px;
+	
 }
 .btnLf:focus, .btnRt:focus{
 	outline: none;
@@ -44,27 +46,27 @@ body{
 .slider .slideLeft{
 	left: -200px;
 	opacity: 0;
-	transition: all 2s;
+	transition: all .7s;
 }
 .slider .slide1{
 	left: 0;
 	opacity: 1;
-	transition: all 2s;
+	transition: all .7s;
 }
 .slider  .slide2{
 	left: 210px;
 	opacity: 1;
-	transition: all 2s;
+	transition: all .7s;
 }
 .slider  .slide3{
 	left: 420px;
 	opacity: 1;
-	transition: all 2s;
+	transition: all .7s;
 }
 .slider  .slideRigth{
 	left: 100%;
 	opacity: 0;
-	transition: all 2s;
+	transition: all .7s;
 }
 @media (max-width: 1024px){
 	.slider{

@@ -68,11 +68,7 @@ body{
 	opacity: 0;
 	transition: all .7s;
 }
-.test{
-	position: absolute;
-	bottom: 40%;
-	left: 40%;
-}
+
 @media (max-width: 1024px){
 	.slider{
 		width: 420px;
